@@ -1,0 +1,30 @@
+# Web & Digital Ark (WDARK)
+
+> Creando mundos, conectando realidades.
+
+Web & Digital Ark (WDARK) es una compañía enfocada en estrategia digital, Drupal enterprise, arquitectura web, UX/UI, integraciones API, SEO técnico, performance y analítica.
+
+## Páginas principales
+
+- Home: https://webdigitalark.com/
+- Empresa: https://webdigitalark.com/empresa
+- Capacidades Drupal: https://webdigitalark.com/capacidades
+- Metodología: https://webdigitalark.com/metodologia
+- Portafolio: https://webdigitalark.com/portafolio
+- Blog: https://webdigitalark.com/blog
+- Contacto: https://webdigitalark.com/contacto
+
+## Perfil de servicios
+
+- Estrategia digital y arquitectura de información
+- Drupal enterprise y gobierno editorial
+- Frontend headless con React / Next.js
+- Integraciones con CRM/ERP mediante APIs
+- SEO técnico y optimización de Core Web Vitals
+- Data, analítica y mejora continua
+
+## Contacto
+
+- Email: jrozo@webdigitalark.com
+- Teléfono: +57 311 831 0391
+- Ubicación: Bogotá, Colombia
