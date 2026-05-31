@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import React,{ useEffect, useRef } from 'react';
 
 const MAX_DPR = 1.6;
 
