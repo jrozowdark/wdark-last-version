@@ -837,20 +837,7 @@ function Header({ normalizeHashLinks = false, activeHref = '#inicio' }) {
 
 function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
   const currentSlide = heroSlides[activeSlide];
-
-  useEffect(() => {
-    if (isPaused) {
-      return undefined;
-    }
-
-    const timer = window.setInterval(() => {
-      setActiveSlide((current) => (current + 1) % heroSlides.length);
-    }, 5000);
-
-    return () => window.clearInterval(timer);
-  }, [isPaused]);
 
   return (
     <section id="inicio" className="hero-section">
@@ -858,17 +845,7 @@ function Hero() {
       <div className="hero-layer hero-layer-overlay" />
       <div className="hero-layer hero-layer-grid" />
 
-      <div
-        className="shell hero-grid"
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
-        onFocusCapture={() => setIsPaused(true)}
-        onBlurCapture={(event) => {
-          if (!event.currentTarget.contains(event.relatedTarget)) {
-            setIsPaused(false);
-          }
-        }}
-      >
+      <div className="shell hero-grid">
         <motion.div className="hero-copy" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
           <p className="eyebrow">CREATIVIDAD • TECNOLOGIA • ESTRATEGIA</p>
 
