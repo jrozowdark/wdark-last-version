@@ -1617,7 +1617,7 @@ function ContactPageSection({ standalone = false, onBackHome }) {
             <p className="mt-3 text-sm leading-7 text-slate-400">
               Completa este formulario para entender alcance, complejidad, tiempos y viabilidad técnica.
             </p>
-            <form className="mt-6 grid gap-4 sm:grid-cols-2" onSubmit={handleDiagnosticSubmit}>
+            {/* <form className="mt-6 grid gap-4 sm:grid-cols-2" onSubmit={handleDiagnosticSubmit}>
               <label className="grid gap-2 text-xs font-bold uppercase tracking-[0.12em] text-slate-300">
                 Nombre completo
                 <input required type="text" name="full_name" className="border border-cyan-300/25 bg-[#020713]/70 px-3 py-3 text-sm text-white outline-none transition focus:border-cyan-300/60" placeholder="Tu nombre" />
@@ -1670,7 +1670,7 @@ function ContactPageSection({ standalone = false, onBackHome }) {
                 <PrimaryButton asButton type="submit" className="w-full sm:w-auto">Enviar solicitud de diagnóstico</PrimaryButton>
                 {diagnosticSubmitted ? <p className="mt-3 text-sm text-cyan-200">Gracias. Te contactaremos para una sesión de diagnóstico.</p> : null}
               </div>
-            </form>
+            </form> */}
           </article>
 
           <aside className="wdark-panel-cut border border-cyan-300/20 bg-cyan-300/[0.03] p-6 md:p-8">
@@ -1707,7 +1707,7 @@ function ContactPageSection({ standalone = false, onBackHome }) {
           <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-400">
             No es una newsletter masiva. Compartimos criterios técnicos y estratégicos útiles para equipos que toman decisiones digitales.
           </p>
-          <form className="mt-6 grid gap-4 md:grid-cols-[1fr_1fr_1fr_auto]" onSubmit={handleNewsletterSubmit}>
+          {/* <form className="mt-6 grid gap-4 md:grid-cols-[1fr_1fr_1fr_auto]" onSubmit={handleNewsletterSubmit}>
             <input type="text" name="newsletter_name" required className="border border-cyan-300/25 bg-[#020713]/70 px-3 py-3 text-sm text-white outline-none transition focus:border-cyan-300/60" placeholder="Nombre" />
             <input type="email" name="newsletter_email" required className="border border-cyan-300/25 bg-[#020713]/70 px-3 py-3 text-sm text-white outline-none transition focus:border-cyan-300/60" placeholder="Correo corporativo" />
             <select name="newsletter_topic" className="border border-cyan-300/25 bg-[#020713]/70 px-3 py-3 text-sm text-white outline-none transition focus:border-cyan-300/60">
@@ -1717,7 +1717,7 @@ function ContactPageSection({ standalone = false, onBackHome }) {
             </select>
             <PrimaryButton asButton type="submit" className="w-full md:w-auto">Suscribirme</PrimaryButton>
           </form>
-          {newsletterSubmitted ? <p className="mt-3 text-sm text-cyan-200">Listo. Te enviaremos contenido curado y de valor.</p> : null}
+          {newsletterSubmitted ? <p className="mt-3 text-sm text-cyan-200">Listo. Te enviaremos contenido curado y de valor.</p> : null} */}
         </article>
 
         {standalone && onBackHome ? (
