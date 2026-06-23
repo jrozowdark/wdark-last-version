@@ -1668,10 +1668,10 @@ function ContactPageSection({ standalone = false, onBackHome }) {
                 <p className="text-xs font-black uppercase tracking-[0.16em] text-cyan-300">Teléfono</p>
                 <p className="mt-1 text-sm text-slate-300">+57 311 831 0391</p>
               </a>
-              <div className="border border-cyan-300/20 bg-[#020713]/70 px-4 py-3">
+              {/* <div className="border border-cyan-300/20 bg-[#020713]/70 px-4 py-3">
                 <p className="text-xs font-black uppercase tracking-[0.16em] text-cyan-300">Ubicación</p>
                 <p className="mt-1 text-sm text-slate-300">Calle 135 #17A-48, Bogotá, Colombia</p>
-              </div>
+              </div> */}
             </div>
           </aside>
         </div>
@@ -1752,7 +1752,7 @@ function Footer({ normalizeToHomeAnchors = false }) {
         <div><Logo href={logoHref} /><p className="mt-5 max-w-xs text-sm leading-6 text-slate-400">Creamos mundos digitales que conectan personas, marcas y oportunidades.</p></div>
         <div><h3 className="text-xs font-black uppercase tracking-[0.2em] text-white">Navegación</h3><div className="mt-4 grid gap-2 text-sm text-slate-400">{normalizedFooterNav.map((item) => <a key={`${item.label}-${item.href}`} href={item.href} className="hover:text-cyan-300">{item.label}</a>)}</div></div>
         <div><h3 className="text-xs font-black uppercase tracking-[0.2em] text-white">Servicios</h3><div className="mt-4 grid gap-2 text-sm text-slate-400">{footerServices.map((item) => <a key={item} href={servicesHref} className="hover:text-cyan-300">{item}</a>)}</div></div>
-        <div><h3 className="text-xs font-black uppercase tracking-[0.2em] text-white">Contacto</h3><div className="mt-4 grid gap-3 text-sm text-slate-400"><a href="tel:+573118310391" className="flex gap-3 hover:text-cyan-300"><Phone size={16} /> +57 311 831 0391</a><a href="mailto:jrozo@webdigitalark.com" className="flex gap-3 hover:text-cyan-300"><Mail size={16} /> jrozo@webdigitalark.com</a><div className="flex gap-3"><MapPin size={16} /> Calle 135 #17A-48, Bogotá, Colombia</div></div></div>
+        <div><h3 className="text-xs font-black uppercase tracking-[0.2em] text-white">Contacto</h3><div className="mt-4 grid gap-3 text-sm text-slate-400"><a href="tel:+573118310391" className="flex gap-3 hover:text-cyan-300"><Phone size={16} /> +57 311 831 0391</a><a href="mailto:jrozo@webdigitalark.com" className="flex gap-3 hover:text-cyan-300"><Mail size={16} /> jrozo@webdigitalark.com</a>{/* <div className="flex gap-3"><MapPin size={16} /> Calle 135 #17A-48, Bogotá, Colombia</div> */}</div></div>
         <div><h3 className="text-xs font-black uppercase tracking-[0.2em] text-white">Síguenos</h3><div className="mt-5 flex gap-3">{socialItems.map(({ label, text }) => <a key={label} href="#contacto" aria-label={label} className="flex h-11 w-11 items-center justify-center border border-cyan-300/50 text-sm font-black uppercase text-cyan-300 transition hover:bg-cyan-300 hover:text-slate-950">{text}</a>)}</div></div>
       </div>
       <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-white/10 px-5 pt-6 text-xs text-slate-500 md:flex-row md:items-center md:justify-between lg:px-8"><p>© Web & Digital Ark SAS 2026. Todos los derechos reservados.</p><p><span className="text-cyan-300">Creando mundos</span> / Conectando realidades</p></div>
