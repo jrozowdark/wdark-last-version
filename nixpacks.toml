@@ -1,6 +1,6 @@
 [build]
-# Usar Node.js para buildear
-cmd = "npm install && npm run build"
+# Limpiar e instalar nuevamente para evitar problemas con dependencias nativas cross-platform
+cmd = "rm -rf node_modules package-lock.json && npm install && npm run build"
 
 [start]
 # Comando para iniciar la aplicación en producción
