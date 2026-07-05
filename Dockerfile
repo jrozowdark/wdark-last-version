@@ -30,5 +30,12 @@ COPY --from=builder /app/dist ./dist
 # Expose port 3002
 EXPOSE 3002
 
+# Traefik labels for automatic routing
+LABEL traefik.enable=true \
+  traefik.http.routers.webdigitalark.rule=Host(`webdigitalark.com`) \
+  traefik.http.routers.webdigitalark.entrypoints=websecure \
+  traefik.http.routers.webdigitalark.tls.certresolver=letsencrypt \
+  traefik.http.services.webdigitalark.loadbalancer.server.port=3002
+
 # Start the serve server on all interfaces
 CMD ["serve", "-s", "dist", "-l", "3002", "-L"]
