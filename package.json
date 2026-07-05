@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
+    "build": "npm rebuild && vite build",
     "preview": "vite preview --host 0.0.0.0 --port 3002",
     "start": "serve -s dist -l 3002"
   },
