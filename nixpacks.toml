@@ -1,6 +1,6 @@
 [build]
-# Limpiar e instalar nuevamente para evitar problemas con dependencias nativas cross-platform
-cmd = "rm -rf node_modules package-lock.json && npm install && npm run build"
+# Forzar npm install en lugar de npm ci para evitar problemas con dependencias nativas
+cmd = "npm install --legacy-peer-deps && npm run build"
 
 [start]
 # Comando para iniciar la aplicación en producción
