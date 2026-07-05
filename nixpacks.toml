@@ -1,0 +1,10 @@
+[build]
+# Usar Node.js para buildear
+cmd = "npm ci && npm run build"
+
+[start]
+# Comando para iniciar la aplicación
+cmd = "npm run preview"
+
+# Puerto que Dockploy debe exponer
+port = 3002
