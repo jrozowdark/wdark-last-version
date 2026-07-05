@@ -11,7 +11,7 @@
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0 --port 3002",
-    "start": "vite preview --host 0.0.0.0 --port 3002"
+    "start": "serve -s dist -l 3002"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.2",
@@ -19,7 +19,8 @@
     "react": "latest",
     "react-dom": "latest",
     "framer-motion": "latest",
-    "lucide-react": "latest"
+    "lucide-react": "latest",
+    "serve": "^14.2.0"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17",

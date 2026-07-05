@@ -3,8 +3,8 @@
 cmd = "npm ci && npm run build"
 
 [start]
-# Comando para iniciar la aplicación
-cmd = "npm run preview"
+# Comando para iniciar la aplicación en producción
+cmd = "npm start"
 
 # Puerto que Dockploy debe exponer
 port = 3002
